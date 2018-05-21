@@ -14,19 +14,19 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0.3');
+  api.versionsFrom('METEOR@1.6.1');
 
   api.use([
     'check',
     'kadira:flow-router',
     'underscore',
-    'useraccounts:core',
+    'jaume:useraccounts-core',
     'modules'
   ], ['client', 'server']);
 
   api.imply([
     'kadira:flow-router@2.10.1',
-    'useraccounts:core@1.14.2',
+    'jaume:useraccounts-core@1.14.2',
   ], ['client', 'server']);
 
   api.use([
